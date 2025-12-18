@@ -76,11 +76,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC    &kp N1       &kp N2       &kp N3        &kp N4                &kp N5                                   &kp N6     &kp N7       &kp N8       &kp N9       &kp N0                       &kp GRAVE
-&kp TAB    &kp Q        &kp W        &kp E         &kp R                 &kp T                                    &kp Y      &kp U        &kp I        &kp O        &kp P                        &kp MINUS
-&kp LCTRL  &mt LC(A) A  &mt LA(S) S  &mt LS(D) D   &mt LG(F) F           &kp G                                    &kp H      &mt RG(J) J  &mt RS(K) K  &mt RA(L) L  &mt RC(SEMICOLON) SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z        &kp X        &kp C         &kp V                 &kp B        &kp LBKT     &kp RBKT       &kp N      &kp M        &kp COMMA    &kp DOT      &kp FSLH                     &kp RSHFT
-                                     &kp LEFT_GUI  &td_symbol_sys_layer  &td_nav_sys  &kp SPACE    &kp BACKSPACE  &kp ENTER  &kp DELETE   &kp RGUI
+&kp ESC    &kp N1       &kp N2       &kp N3        &kp N4                &kp N5                               &kp N6         &kp N7       &kp N8       &kp N9       &kp N0                       &kp GRAVE
+&kp TAB    &kp Q        &kp W        &kp E         &kp R                 &kp T                                &kp Y          &kp U        &kp I        &kp O        &kp P                        &kp MINUS
+&kp LCTRL  &mt LC(A) A  &mt LA(S) S  &mt LS(D) D   &mt LG(F) F           &kp G                                &kp H          &mt RG(J) J  &mt RS(K) K  &mt RA(L) L  &mt RC(SEMICOLON) SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z        &kp X        &kp C         &kp V                 &kp B        &kp LBKT     &kp RBKT   &kp N          &kp M        &kp COMMA    &kp DOT      &kp FSLH                     &kp RSHFT
+                                     &kp LEFT_GUI  &td_symbol_sys_layer  &td_nav_sys  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DELETE   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -118,11 +118,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESC    &kp LC(Z)       &kp LC(LS(Z))   &kp LC(X)        &kp LC(C)  &kp LC(V)                                   &kp HOME          &kp PAGE_UP        &kp PAGE_DOWN  &kp END         &mkp LCLK          &mkp RCLK
-&kp LC(F)  &trans          &mmv MOVE_UP    &trans           &trans     &trans                                      &kp RS(RC(LEFT))  &kp LC(LEFT)       &kp UP_ARROW   &kp RC(RIGHT)   &kp RC(RS(RIGHT))  &trans
-&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &msc SCRL_DOWN                              &trans            &td_left_home      &kp DOWN       &td_right_end   &trans             &trans
-&trans     &kp LC(S)       &kp LS(LA(F))   &kp LC(H)        &trans     &msc SCRL_UP    &mkp LCLK    &mkp RCLK      &trans            &kp LC(BACKSPACE)  &trans         &kp RC(DELETE)  &trans             &bootloader
-                                           &trans           &trans     &to 0           &kp SPACE    &kp BACKSPACE  &kp ENTER         &kp DEL            &trans
+&kp ESC    &kp LC(Z)       &kp LC(LS(Z))   &kp LC(X)        &kp LC(C)  &kp LC(V)                               &kp HOME          &kp PAGE_UP        &kp PAGE_DOWN  &kp END         &mkp LCLK          &mkp RCLK
+&kp LC(F)  &trans          &mmv MOVE_UP    &trans           &trans     &trans                                  &kp RS(RC(LEFT))  &kp LC(LEFT)       &kp UP_ARROW   &kp RC(RIGHT)   &kp RC(RS(RIGHT))  &trans
+&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &msc SCRL_DOWN                          &trans            &td_left_home      &kp DOWN       &td_right_end   &trans             &trans
+&trans     &kp LC(S)       &kp LS(LA(F))   &kp LC(H)        &trans     &msc SCRL_UP    &mkp LCLK    &mkp RCLK  &trans            &kp LC(BACKSPACE)  &trans         &kp RC(DELETE)  &trans             &bootloader
+                                           &trans           &trans     &to 0           &kp SPACE    &kp ENTER  &kp BACKSPACE     &kp DEL            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -139,11 +139,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp ESC    &kp LG(Z)       &kp LG(LS(Z))   &kp LG(X)        &kp LG(C)  &kp LG(V)                                   &kp HOME                &kp PAGE_UP         &kp PAGE_DOWN  &kp END         &mkp LCLK          &mkp RCLK
-&kp LG(F)  &trans          &mmv MOVE_UP    &trans           &trans     &trans                                      &kp RG(RA(LEFT_ARROW))  &kp LA(LEFT_ARROW)  &kp UP_ARROW   &kp RA(RIGHT)   &kp RG(RA(RIGHT))  &trans
-&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &msc SCRL_UP                                &trans                  &td_left_home       &kp DOWN       &td_right_end   &trans             &trans
-&trans     &kp LG(S)       &kp LS(RA(F))   &kp LG(H)        &trans     &msc SCRL_DOWN  &mkp LCLK    &mkp RCLK      &trans                  &kp LA(BACKSPACE)   &trans         &kp LA(DELETE)  &trans             &trans
-                                           &trans           &trans     &to 0           &kp SPACE    &kp BACKSPACE  &kp ENTER               &kp DELETE          &trans
+&kp ESC    &kp LG(Z)       &kp LG(LS(Z))   &kp LG(X)        &kp LG(C)  &kp LG(V)                               &kp HOME                &kp PAGE_UP         &kp PAGE_DOWN  &kp END         &mkp LCLK          &mkp RCLK
+&kp LG(F)  &trans          &mmv MOVE_UP    &trans           &trans     &trans                                  &kp RG(RA(LEFT_ARROW))  &kp LA(LEFT_ARROW)  &kp UP_ARROW   &kp RA(RIGHT)   &kp RG(RA(RIGHT))  &trans
+&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &msc SCRL_UP                            &trans                  &td_left_home       &kp DOWN       &td_right_end   &trans             &trans
+&trans     &kp LG(S)       &kp LS(RA(F))   &kp LG(H)        &trans     &msc SCRL_DOWN  &mkp LCLK    &mkp RCLK  &trans                  &kp LA(BACKSPACE)   &trans         &kp LA(DELETE)  &trans             &trans
+                                           &trans           &trans     &to 0           &kp SPACE    &kp ENTER  &kp BACKSPACE           &kp DELETE          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
