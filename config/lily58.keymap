@@ -120,8 +120,8 @@
             bindings = <
 &kp ESC    &kp LC(Z)       &kp LC(LS(Z))   &kp LC(X)        &kp LC(C)  &kp LC(V)                               &kp HOME          &kp PAGE_UP        &kp PAGE_DOWN  &kp END         &mkp LCLK          &mkp RCLK
 &kp LC(F)  &trans          &mmv MOVE_UP    &trans           &trans     &trans                                  &kp RS(RC(LEFT))  &kp LC(LEFT)       &kp UP_ARROW   &kp RC(RIGHT)   &kp RC(RS(RIGHT))  &trans
-&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &msc SCRL_DOWN                          &trans            &td_left_home      &kp DOWN       &td_right_end   &trans             &trans
-&trans     &kp LC(S)       &kp LS(LA(F))   &kp LC(H)        &trans     &msc SCRL_UP    &mkp LCLK    &mkp RCLK  &trans            &kp LC(BACKSPACE)  &trans         &kp RC(DELETE)  &trans             &bootloader
+&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &msc SCRL_UP                            &trans            &td_left_home      &kp DOWN       &td_right_end   &trans             &trans
+&trans     &kp LC(S)       &kp LS(LA(F))   &kp LC(H)        &trans     &msc SCRL_DOWN  &mkp LCLK    &mkp RCLK  &trans            &kp LC(BACKSPACE)  &trans         &kp RC(DELETE)  &trans             &bootloader
                                            &trans           &trans     &to 0           &kp SPACE    &kp ENTER  &kp BACKSPACE     &kp DEL            &trans
             >;
 
